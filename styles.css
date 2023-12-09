@@ -38,10 +38,12 @@ body {
 }
 
 .primary-button {
+    font-size: 18px;
+    font-style: bold;
     background-color: #3882F6;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 20px 10px 20px;
 }
 
@@ -60,7 +62,16 @@ body {
 }
 
 .call-to-action {
+    color: white;
     background-color: #3882F6;
+}
+
+.secondary-button {
+    color: white;
+    background-color: #3882F6;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
 }
 
 footer {
