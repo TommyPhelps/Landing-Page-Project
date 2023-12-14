@@ -1,19 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: system-ui, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    background-color: #1F2937;
+    display:flex;
+    justify-content: space-between;
+    padding: 1% 15% 0% 15%;
 }
 
 .hero {
     background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8% 15% 8% 15%;
+    gap: 20%;
 }
+
 
 .header-logo {
     font-size: 24px;
@@ -23,6 +36,9 @@ body {
 .nav-links {
     margin: 0;
     padding: 0;
+    display:flex;
+    gap: 5px;
+    align-content: center;
     list-style: none;
 }
 
@@ -37,6 +53,19 @@ body {
     color: #E5E7EB;
 }
 
+.hero-secondary-text {
+    padding: 5px 0px;
+}
+
+.secondary-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 15% 2% 15%;
+    gap: 20%;
+}
+
+
 .primary-button {
     font-size: 18px;
     font-style: bold;
@@ -44,13 +73,33 @@ body {
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 30px 10px 30px;
 }
 
 .primary-header {
+    display: flex;
     font-size: 36px;
     font-weight: 700;
     color: #1F2937;
+    padding-bottom: 2%;
+}
+
+.card-containers {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.card-containers > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-containers > div > img {
+    height: 200px;
+    width: 200px;
 }
 
 .quote-container {
@@ -59,6 +108,16 @@ body {
     font-weight: 300;
     font-style: italic;
     color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
+
+.author {
+    font-weight: 700;
+    font-size: 25px;
+    align-self: self-end;
 }
 
 .call-to-action {
