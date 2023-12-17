@@ -18,6 +18,20 @@ body {
     padding: 1% 15% 0% 15%;
 }
 
+.nav-bar .logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.nav-bar .nav-links {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    gap: 5px;
+    align-content: center;
+    list-style: none;
+}
+
 .hero {
     background-color: #1F2937;
     display: flex;
@@ -28,33 +42,29 @@ body {
 }
 
 
-.header-logo {
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-.nav-links {
-    margin: 0;
-    padding: 0;
-    display:flex;
-    gap: 5px;
-    align-content: center;
-    list-style: none;
-}
-
-.hero-main-text {
+.hero-left > h1 {
     font-size: 48px;
     font-weight: 700;
     color: #F9FAF8;
 }
 
-.hero-secondary-text, .nav-links {
+.hero-left > p, .nav-links {
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.hero-secondary-text {
+.hero-left > p{
     padding: 5px 0px;
+}
+
+.hero-left > button {
+    font-size: 18px;
+    font-style: bold;
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
 }
 
 .secondary-row {
@@ -65,18 +75,7 @@ body {
     gap: 20%;
 }
 
-
-.primary-button {
-    font-size: 18px;
-    font-style: bold;
-    background-color: #3882F6;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 30px 10px 30px;
-}
-
-.primary-header {
+.secondary-row > h2 {
     display: flex;
     font-size: 36px;
     font-weight: 700;
@@ -143,9 +142,6 @@ body {
 
 .call-to-action button {
     display: flex;
-}
-
-.secondary-button {
     color: white;
     background-color: #3882F6;
     border: 3px solid white;
